@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopheadlineComponent } from './topheadline/topheadline.component';
 import { HttpClientModule } from '@angular/common/http';
+import { IdtvnewsapiService } from './service/idtvnewsapi.service';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [IdtvnewsapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
