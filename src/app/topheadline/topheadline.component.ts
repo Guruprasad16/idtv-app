@@ -14,7 +14,7 @@ export class TopheadlineComponent implements OnInit {
   ngOnInit(): void {
     this.api.tcHeadlines().subscribe((result)=>{
       console.log(result);
-      this.topHeadlinesData = result;
+      this.topHeadlinesData = result.data;
     })
   }
 }

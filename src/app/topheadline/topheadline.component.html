@@ -1,1 +1,9 @@
-<p>topheadline works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div *ngFor="let data of topHeadlinesData" class="col-log-3">
+      <h5>{{ data.title }}</h5>
+      <p>{{data.description}}</p>
+      <a href="{{data.url}}">Read More</a>
+    </div>
+  </div>
+</div>
