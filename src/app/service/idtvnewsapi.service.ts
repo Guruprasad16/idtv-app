@@ -10,9 +10,9 @@ export class IdtvnewsapiService {
 
   //topheadline URL
   topHeadlineNews =
-    'https://api.thenewsapi.com/v1/news/headlines?locale=us&language=en&api_token=hSBJlB1U5X9f8GNn3JLnnqYfSUFiwu6ly070f8Q0';
+    'https://api.thenewsapi.com/v1/news/top?api_token=hSBJlB1U5X9f8GNn3JLnnqYfSUFiwu6ly070f8Q0&locale=us&limit=3';
 
-    tcHeadlines():Observable<any>{
-      return this._http.get(this.topHeadlineNews)
-    }
+  tcHeadlines(): Observable<any> {
+    return this._http.get(this.topHeadlineNews);
+  }
 }
