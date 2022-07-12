@@ -10,11 +10,11 @@ export class TopheadlineComponent implements OnInit {
   constructor(private api: IdtvnewsapiService) {}
 
   //display headline data
-  topHeadlinesData:any = [];
+  topHeadlinesData: any = [];
   ngOnInit(): void {
-    this.api.tcHeadlines().subscribe((result)=>{
+    this.api.tcHeadlines().subscribe((result) => {
       console.log(result);
       this.topHeadlinesData = result.data;
-    })
+    });
   }
 }
