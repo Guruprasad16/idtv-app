@@ -7,13 +7,15 @@ import { TopheadlineComponent } from './topheadline/topheadline.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IdtvnewsapiService } from './service/idtvnewsapi.service';
 import { TechComponent } from './tech/tech.component';
+import { BusinessComponent } from './business/business.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TopheadlineComponent,
-    TechComponent
+    TechComponent,
+    BusinessComponent
   ],
   imports: [
     BrowserModule,
