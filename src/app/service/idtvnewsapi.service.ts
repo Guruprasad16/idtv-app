@@ -16,6 +16,11 @@ export class IdtvnewsapiService {
   techNews =
     ' https://api.thenewsapi.com/v1/news/top?api_token=hSBJlB1U5X9f8GNn3JLnnqYfSUFiwu6ly070f8Q0&locale=in&category=technology&limit=50';
 
+  //business news API URL
+  businessNews =
+    ' https://api.thenewsapi.com/v1/news/top?api_token=hSBJlB1U5X9f8GNn3JLnnqYfSUFiwu6ly070f8Q0&locale=in&limit=50';
+
+
   tcHeadlines(): Observable<any> {
     return this._http.get(this.topHeadlineNews);
   }
@@ -23,4 +28,9 @@ export class IdtvnewsapiService {
   tcTech(): Observable<any> {
     return this._http.get(this.techNews);
   }
+
+  tcBuss(): Observable<any> {
+    return this._http.get(this.businessNews);
+  }
+
 }
