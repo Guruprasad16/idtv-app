@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { TopheadlineComponent } from './topheadline/topheadline.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IdtvnewsapiService } from './service/idtvnewsapi.service';
+import { TechComponent } from './tech/tech.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopheadlineComponent
+    TopheadlineComponent,
+    TechComponent
   ],
   imports: [
     BrowserModule,
