@@ -14,3 +14,7 @@ marquee{
     padding: 10px 10px;
     background-color: rgb(238, 238, 238);
 }
+.box h5{
+    font-size: 15px;
+    font-weight: bold;
+}
