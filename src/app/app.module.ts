@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { IdtvnewsapiService } from './service/idtvnewsapi.service';
 import { TechComponent } from './tech/tech.component';
 import { BusinessComponent } from './business/business.component';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { BusinessComponent } from './business/business.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LoadingBarHttpClientModule
   ],
   providers: [IdtvnewsapiService],
   bootstrap: [AppComponent]
