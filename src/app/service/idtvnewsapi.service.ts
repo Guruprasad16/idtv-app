@@ -10,16 +10,31 @@ export class IdtvnewsapiService {
 
   //topheadline API URL
   topHeadlineNews =
-    ' https://api.thenewsapi.com/v1/news/top?api_token=hSBJlB1U5X9f8GNn3JLnnqYfSUFiwu6ly070f8Q0&locale=in&limit=50';
+    ' http://api.mediastack.com/v1/news?access_key=be78bfb5b5687e4d70de1fda3e940436&countries=us&languages=en&limit=100';
 
   //tech news API URL
   techNews =
-    ' https://api.thenewsapi.com/v1/news/top?api_token=hSBJlB1U5X9f8GNn3JLnnqYfSUFiwu6ly070f8Q0&locale=in&category=technology&limit=50';
+    'http://api.mediastack.com/v1/news?access_key=be78bfb5b5687e4d70de1fda3e940436&countries=us&categories=technology&languages=en&limit=100';
 
   //business news API URL
   businessNews =
-    ' https://api.thenewsapi.com/v1/news/top?api_token=hSBJlB1U5X9f8GNn3JLnnqYfSUFiwu6ly070f8Q0&locale=in&limit=50';
+    'http://api.mediastack.com/v1/news?access_key=be78bfb5b5687e4d70de1fda3e940436&countries=us&categories=business&languages=en&limit=100';
 
+  //sports news API URL
+  sportsNews =
+    'http://api.mediastack.com/v1/news?access_key=be78bfb5b5687e4d70de1fda3e940436&countries=us&categories=sports&languages=en&limit=100';
+
+  //health news API URL
+  healthNews =
+    'http://api.mediastack.com/v1/news?access_key=be78bfb5b5687e4d70de1fda3e940436&countries=us&categories=health&languages=en&limit=100';
+
+  //entertainment news API URL
+  entertainmentNews =
+    'http://api.mediastack.com/v1/news?access_key=be78bfb5b5687e4d70de1fda3e940436&countries=us&categories=entertainment&languages=en&limit=100';
+
+  //science news API URL
+  scienceNews =
+    'http://api.mediastack.com/v1/news?access_key=be78bfb5b5687e4d70de1fda3e940436&countries=us&categories=science&languages=en&limit=100';
 
   tcHeadlines(): Observable<any> {
     return this._http.get(this.topHeadlineNews);
@@ -33,4 +48,19 @@ export class IdtvnewsapiService {
     return this._http.get(this.businessNews);
   }
 
+  tcSports(): Observable<any> {
+    return this._http.get(this.sportsNews);
+  }
+
+  tcHealth(): Observable<any> {
+    return this._http.get(this.healthNews);
+  }
+
+  tcEntertainment(): Observable<any> {
+    return this._http.get(this.entertainmentNews);
+  }
+
+  tcScience(): Observable<any> {
+    return this._http.get(this.scienceNews);
+  }
 }

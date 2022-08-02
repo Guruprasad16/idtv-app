@@ -9,6 +9,12 @@ import { IdtvnewsapiService } from './service/idtvnewsapi.service';
 import { TechComponent } from './tech/tech.component';
 import { BusinessComponent } from './business/business.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { SportsComponent } from './sports/sports.component';
+import { HealthComponent } from './health/health.component';
+import { EntertainmentComponent } from './entertainment/entertainment.component';
+import { ScienceComponent } from './science/science.component';
+import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
 
 
 @NgModule({
@@ -16,13 +22,19 @@ import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
     AppComponent,
     TopheadlineComponent,
     TechComponent,
-    BusinessComponent
+    BusinessComponent,
+    SportsComponent,
+    HealthComponent,
+    EntertainmentComponent,
+    ScienceComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    LoadingBarHttpClientModule
+    LoadingBarHttpClientModule,
+    FormsModule
   ],
   providers: [IdtvnewsapiService],
   bootstrap: [AppComponent]
